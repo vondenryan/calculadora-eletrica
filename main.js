@@ -1,11 +1,21 @@
-let option = parseInt(prompt(`
-    1. Eletric Calculator
-`));
+let option = 1
 
-switch(option) {
-    case 1:
-        eletric();
-        break;
-    default:
-        console.log("Invalid option.");
+while (option != 0) {
+    option = parseInt(prompt(`
+        1. Eletric Calculator
+        2. Mult & Sub
+    `));
+
+    switch(option) {
+        case 0:
+            break;
+        case 1:
+            eletric();
+            break;
+        case 2:
+            conversion();
+            break;
+        default:
+            console.log("Invalid option.");
+    }
 }
