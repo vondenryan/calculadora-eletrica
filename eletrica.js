@@ -3,6 +3,7 @@ function eletric() {
     let opcao = parseInt(prompt("1. Watt\n2. KiloWatt\nDigite a opção: "));
     let potencia = parseFloat(prompt("Digite a potência: "));
     let tempo = parseInt(prompt("Digite o tempo de uso: "));
+    let taxa = parseInt(prompt("Digite o valor do Kwh: "));
     let kwhMes, valor;
 
     switch(opcao) {
@@ -16,7 +17,7 @@ function eletric() {
             console.log("Opção inválida!");
     }
     
-    valor = kwhMes * 0.9;
+    valor = kwhMes * taxa;
 
     console.log(`Eletrodomestico: ${eletrodomestico}\nKwh Mes: ${kwhMes.toFixed(2)}\nValor: ${valor.toFixed(2)}`);
 }
