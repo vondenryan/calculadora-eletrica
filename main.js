@@ -1,8 +1,4 @@
-let option = 1
-
-//while (option != 0) {}
-
-option = parseInt(prompt(`
+let option = parseInt(prompt(`
     1. Eletric Calculator
     2. Mult & Sub
 `));

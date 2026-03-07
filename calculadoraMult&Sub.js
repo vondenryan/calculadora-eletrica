@@ -1,36 +1,38 @@
 let conversionTable = {
-    "G": 1**9,
-    "M": 1**6,
-    "k": 1**3,
-    "base": 1,
-    "m": 10**-3,
-    "µ": 10**-6,
-    "n": 10**-9,
-    "p": 10**-12
+    "G": 9,
+    "M": 6,
+    "k": 3,
+    "base": 0,
+    "m": -3,
+    "u": -6,
+    "n": -9,
+    "p": -12
 }
 
 function conversionMain() {
-    let origin_unity = parseInt(prompt("Digite a unidade de origem: "));
-    let destiny_unity = parseInt(prompt(
-        "1. G - 2. M",
-        "\n3. k - 4. Base",
-        "\n5. m - 6. µ",
-        "\n7. n - 8. p",
-        "\nDigite a unidade de destino: "
+    console.log("Unidades disponiveis:\nG - M - k - base - m - u - n - p");
+    let origin_unity = prompt("Unidade origem (deixe vazio para base):") || "base";
+    let destiny_unity = prompt("Unidade destino (deixe vazio para base):") || "base";
+    let magnitude = prompt("Digite a grandeza: ");
 
-    ));
-    let value = parseInt(prompt("Digite o valor: "))
+    let value = parseInt(prompt("Digite o valor: "));
+    let convertedVal = conversion(origin_unity, destiny_unity, value);
 
-    conversion(origin_unity, destiny_unity, value)
+    if(!convertedVal) return;
+
+    console.log(`${convertedVal} ${destiny_unity === "base" ? "" : destiny_unity}${magnitude}`);
 }
 
 function conversion(origin, destiny, value) {
-    let baseValue, convertedValue
+    let from, to;
 
-    if(!conversionTable[origin] || !conversionTable[destiny]) return
+    if(conversionTable[origin] == undefined || conversionTable[destiny] == undefined) {
+        console.log("Unidade Inválida!");
+        return;
+    }
 
-    baseValue = baseValue * conversionTable[origin]
-    convertedValue = baseValue / conversionTable[destiny]
+    from = conversionTable[origin];
+    to = conversionTable[destiny];
 
-    console.log(convertedValue, ` ${destiny}`)
+    return value * (10 ** (from - to));
 }
