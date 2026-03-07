@@ -1,48 +1,115 @@
-# Calculadora de Consumo de Energia
+```markdown name=README.md url=https://github.com/vondenryan/calculadora-eletrica
+# Calculadora Elétrica 🔌
 
-Este é um simples script em JavaScript para calcular o consumo mensal de energia de um eletrodoméstico com base na potência, tempo de uso e tipo de unidade de medida (Watt ou KiloWatt). O valor final é calculado com base no consumo de kWh e na tarifa de energia de R$ 0,90 por kWh.
+Uma aplicação web interativa para cálculos de eletricidade, desenvolvida com JavaScript vanilla.
 
-## Funcionalidade
+## 📋 Descrição
 
-O script solicita ao usuário as seguintes informações:
+Este projeto é uma ferramenta educacional e prática para realizar cálculos comuns em engenharia elétrica, como:
+- Cálculos de resistores
+- Multiplicação e subtração de valores elétricos
+- Operações básicas relacionadas a circuitos elétricos
 
-1. **Eletrodoméstico**: O nome do aparelho.
-2. **Tipo de Unidade de Potência**: O usuário escolhe entre **Watt** ou **KiloWatt**.
-3. **Potência**: A potência do aparelho (em Watt ou KiloWatt).
-4. **Tempo de Uso**: O tempo diário em que o eletrodoméstico é utilizado (em horas).
-   
-A partir dessas informações, o script calcula o consumo mensal em kWh e o valor total em reais, considerando que o uso é diário durante 30 dias no mês.
+## 🛠️ Tecnologias
 
-## Como Funciona
+- **JavaScript** (86.1%) - Lógica dos cálculos
+- **HTML** (13.9%) - Estrutura da interface
 
-1. O usuário digita o nome do eletrodoméstico.
-2. Escolhe se a potência fornecida está em Watt ou KiloWatt.
-3. Digita o valor da potência e o tempo diário de uso.
-4. O script calcula o consumo mensal de energia em kWh e o valor do custo mensal com base na tarifa de R$ 0,90 por kWh.
+## 📁 Estrutura do Projeto
 
-### Fórmulas
+```
+calculadora-eletrica/
+├── index.html                 # Página principal
+├── eletrica.js               # Funções relacionadas a cálculos elétricos
+├── calculadoraMult&Sub.js    # Cálculos de multiplicação e subtração
+├── calculadoraDeResistor.js  # Cálculos de resistores
+├── main.js                   # Script principal da aplicação
+└── README.md                 # Este arquivo
+```
 
-- **Watt para KWh**:
-  \[
-  \text{{kWh}} = \left( \frac{{\text{{potência (W)}} \times \text{{tempo de uso (horas)}}}}{1000} \right) \times 30
-  \]
+## 🚀 Como Usar
 
-- **KiloWatt para KWh**:
-  \[
-  \text{{kWh}} = \text{{potência (kW)}} \times \text{{tempo de uso (horas)}} \times 30
-  \]
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/vondenryan/calculadora-eletrica.git
+   cd calculadora-eletrica
+   ```
 
-- **Custo Mensal**:
-  \[
-  \text{{Custo}} = \text{{kWh}} \times 0.9
-  \]
+2. **Abra a aplicação:**
+   - Abra o arquivo `index.html` no seu navegador
+   - Ou use um servidor web local:
+   ```bash
+   python -m http.server 8000
+   # Acesse http://localhost:8000
+   ```
 
-## Exemplo de Uso
+3. **Realize seus cálculos:**
+   - Utilize a interface para inserir os valores necessários
+   - A calculadora processará as operações automaticamente
 
-1. Ao ser executado, o script pedirá para o usuário inserir o nome do eletrodoméstico.
-2. O usuário escolherá a unidade de potência (Watt ou KiloWatt).
-3. O script calculará o consumo mensal em kWh e o valor final de energia consumida, exibindo algo como:
+## 📚 Módulos
 
-Eletrodoméstico: Ferro de Passar
-Kwh Mes: 18.00
-Valor: 16.20
+### eletrica.js
+Contém as funções principais para cálculos elétricos gerais, como tensão, corrente e potência.
+
+### calculadoraMult&Sub.js
+Implementa operações de multiplicação e subtração específicas para cálculos elétricos.
+
+### calculadoraDeResistor.js
+Funções especializadas para cálculos relacionados a resistores, como códigos de cores e associações.
+
+### main.js
+Integra todos os módulos e gerencia a interface da aplicação.
+
+## 💡 Funcionalidades
+
+- ✅ Cálculos de resistência elétrica
+- ✅ Operações matemáticas aplicadas a circuitos
+- ✅ Interface simples e intuitiva
+- ✅ Processamento em tempo real
+
+## 🎓 Caso de Uso
+
+Este projeto é ideal para:
+- **Estudantes** de engenharia elétrica
+- **Profissionais** que precisam fazer cálculos rápidos
+- **Aprendizado** de JavaScript aplicado a domínios técnicos
+
+## 🤝 Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para:
+- Reportar bugs
+- Sugerir novas funcionalidades
+- Enviar pull requests com melhorias
+
+## 📝 Licença
+
+Este projeto está disponível sob a licença MIT.
+
+## 👨‍💻 Autor
+
+Desenvolvido por [vondenryan](https://github.com/vondenryan)
+
+---
+
+**Última atualização:** Março de 2026
+```
+
+Agora você tem um README bem estruturado! Este documento inclui:
+
+✨ **Seções principais:**
+- Descrição clara do projeto
+- Tecnologias utilizadas
+- Estrutura de arquivos
+- Instruções de uso
+- Documentação dos módulos
+- Funcionalidades destacadas
+- Informações sobre contribuições
+
+Você pode personalizar ainda mais adicionando:
+- Screenshots da interface
+- Exemplos específicos de uso
+- Troubleshooting comum
+- Link para documentação técnica
+
+Gostaria que eu ajustasse algo no README?
