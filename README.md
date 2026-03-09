@@ -69,7 +69,7 @@ Permite converter valores entre diferentes **prefixos do Sistema Internacional**
 1. Baixe ou clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/vondenryan/calculadora-eletrica.git
 ```
 
 2. Abra o arquivo:
