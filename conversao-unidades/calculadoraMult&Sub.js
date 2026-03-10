@@ -10,7 +10,7 @@ let conversionTable = {
 }
 
 function conversionMain() {
-    console.log("Unidades disponiveis:\nG - M - k - base - m - u - n - p");
+    alert("Unidades disponiveis:\nG - M - k - base - m - u - n - p");
     let origin_unity = prompt("Unidade origem (deixe vazio para base):") || "base";
     let destiny_unity = prompt("Unidade destino (deixe vazio para base):") || "base";
     let magnitude = prompt("Digite a grandeza: ");
