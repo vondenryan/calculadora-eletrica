@@ -1,0 +1,32 @@
+Converta as seguintes medidas para a unidade base indicada. a) Corrente elétrica (converter para Ampère – A)
+750 mA = 0,75 A
+4,2 mA = 0,0042 A
+0,003 A = 0,003 A
+1 200 mA = 1,2 A
+15 µA = 0,000015 A
+b) Tensão elétrica (converter para Volt – V) 6. 2,5 kV = 2.500 V 7. 750 mV = 0,75 V 8. 0,004 kV = 4 V 9. 15 000 mV = 15 V 10. 0,002 V = 0,002 V
+
+c) Resistência (converter para Ohm – Ω) 11. 3,3 kΩ = 3.300 Ω 12. 0,47 MΩ = 470.000 Ω 13. 1200 Ω = 1.200 Ω 14. 8,2 kΩ = 8.200 Ω 15. 0,002 MΩ = 2.000 Ω
+
+Converta para múltiplos e submúltiplos indicados.
+0,02 A → 20 mA
+5 A → 5.000 mA
+0,0004 A → 400 µA
+2200 Ω → 2,2 kΩ
+0,000015 V → 0,015 mV
+Converta para a forma científica em múltiplos.
+12 000 W → 12 kW
+0,00056 W → 0,56 mW
+0,0000009 A → 0,9 µA
+1 500 000 Ω → 1.5 MΩ
+0,0047 V → 4.7 mV
+Desafios (aplicação prática)
+Um LED consome 25 mA. Quantos Ampères isso representa? 0.025 A
+
+Uma fonte fornece 0,005 kV. Qual a tensão em Volts? 5 V
+
+Um resistor de 2,2 kΩ equivale a quantos Ohms? 2200 Ω
+
+Um instrumento mede 0,000032 A. Expresse em microampères. 32 µA
+
+A resistência de um sensor é 0,0032 MΩ. Expresse em kΩ. 3.2 kΩb
